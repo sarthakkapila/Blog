@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
+  title: 'Blog',
   author: 'Sarthak Kapila',
   headerTitle: 'Blog',
   description: 'Sharing my thoughts and ideas :)',
