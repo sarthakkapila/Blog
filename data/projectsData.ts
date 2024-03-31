@@ -7,20 +7,35 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Motion',
+    description: `🚀 Motion a Notion-like app built with Next.js, Tailwind CSS, TypeScript, Convex, & Clerk! Publish your notes effortlessly.
+    Github:- https://github.com/sarthakkapila/Notionclone`,
+    imgSrc: '/static/images/Motion.png',
+    href: 'https://notionclone-ivory.vercel.app/',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'BareBonesAI',
+    description: `"BarebonesAI" conveys deep learning using minimal or basic, stripped down to its essential components by using fundamental building
+     blocks, without the additional layers of abstraction provided by different frameworks like PyTorch or TensorFlow. Everything is made from scratch, including 
+     the backpropagation engine :)`,
+    imgSrc: '/static/images/Barebones.jpeg',
+    href: 'https://github.com/sarthakkapila/BareBonesAI',
+  },
+  {
+    title: 'Tic Tac Toe AI',
+    description: `"The Tic Tac Toe Player is a Python-based implementation of the classic Tic Tac Toe game. It features a robust computer AI that uses the minimax algorithm to provide challenging gameplay.
+
+    `,
+    imgSrc: '/static/images/minimax.jpg',
+    href: 'https://github.com/sarthakkapila/Tic-Tac_Toe_AI',
+  },
+  {
+    title: 'AntiqueScan',
+    description: `"Coming soooon ....
+
+    `,
+    imgSrc: '/static/images/Page1.jpeg',
+    href: 'https://github.com/sarthakkapila/AntiqueScan',
   },
 ]
 
