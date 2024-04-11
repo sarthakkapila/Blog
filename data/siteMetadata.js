@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Blog',
+  title: 'Sarthak Kapila',
   author: 'Sarthak Kapila',
-  // headerTitle: 'Sarthak Kapila',
+  headerTitle: 'Sarthak Kapila',
   description: "Hi, I'm Sarthak, Full Stack developer and AI enthusiast e/acc! 🚀",
   language: 'en-us',
   theme: 'system', // system, dark or light
