@@ -2,14 +2,14 @@
 const siteMetadata = {
   title: 'Blog',
   author: 'Sarthak Kapila',
-  headerTitle: 'Blog',
-  description: 'Sharing my thoughts and ideas :)',
+  // headerTitle: 'Sarthak Kapila',
+  description: "Hi, I'm Sarthak, Full Stack developer and AI enthusiast e/acc! 🚀",
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://sarthakkapila.com',
   siteRepo: 'https://github.com/sarthakkapila/Blog',
-  siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',
+  siteLogo: '/static/images/300px-E-acc_small.png',
+  socialBanner: '/static/images/twitter.png',
   // mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'sarthakkapila1@gmail.com',
   github: 'https://github.com/sarthakkapila',
