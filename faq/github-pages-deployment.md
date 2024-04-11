@@ -1,4 +1,4 @@
-# How do I deploy on Github pages?
+<!-- # How do I deploy on Github pages?
 
 [Demo](https://timlrx.github.io/tailwind-nextjs-starter-blog/) & [Source](https://github.com/timlrx/tailwind-nextjs-starter-blog/tree/test-gh-pages-static)
 
@@ -105,4 +105,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-```
+``` -->
