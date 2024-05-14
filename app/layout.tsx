@@ -64,11 +64,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${space_grotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <link rel="apple-touch-icon" sizes="76x76" href="/static/images/300px-E-acc_small.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/images/300px-E-acc_small.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/images/300px-E-acc_small.png" />
-      <link rel="manifest" href="/static/images/300px-E-acc_small.png" />
-      <link rel="mask-icon" href="/static/images/300px-E-acc_small.png" color="#5bbad5" />
+      <link rel="apple-touch-icon" sizes="76x76" href="/static/images/logohaha.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/images/logohaha.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/images/logohaha.png" />
+      <link rel="manifest" href="/static/images/logohaha.png" />
+      <link rel="mask-icon" href="/static/images/logohaha.png" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
