@@ -15,13 +15,13 @@ const projectsData: Project[] = [
   },
   {
     title: 'VeriTiny',
-    description: `"
+    description: `
         Minimal CPU implementation in SystemVerilog
-        Under Construction🔨
+
 
         Aimed at learning how CPUs & GPUs work from the ground up!
 
-        Will make the repo public soooon!
+        Will make the repo public soooon!  (Under Construction🔨)
     `,
     imgSrc: '/static/images/cpu.png',
     href: 'https://github.com/sarthakkapila/VeriTiny',
@@ -35,10 +35,10 @@ This powerful tool propagates code changes seamlessly across your codebase`,
   },
 
   {
-    title: 'Motion',
+    title: 'Motion-Notion clone',
     description: `🚀 Motion a Notion-like app built with Next.js, Tailwind CSS, TypeScript, Convex, & Clerk! Publish your notes effortlessly.
     Github:- https://github.com/sarthakkapila/Notionclone`,
-    imgSrc: '/static/images/Motion.png',
+    imgSrc: '/static/images/notion.jpg',
     href: 'https://notionclone-sarthak.vercel.app/',
   },
 
