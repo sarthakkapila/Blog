@@ -58,7 +58,13 @@ This powerful tool propagates code changes seamlessly across your codebase`,
     imgSrc: '/static/images/0_d9yJ5xIqdbDyjCYR.gif',
     href: 'https://github.com/sarthakkapila/Miniprop',
   },
-
+  {
+    title: 'AntiqueScan',
+    description: `"A CRNN text-OCR model trained for manuscripts and old texts.
+    `,
+    imgSrc: '/static/images/ocr.jpg',
+    href: 'https://github.com/sarthakkapila/AntiqueScan',
+  },
   {
     title: 'Tic Tac Toe AI',
     description: `"The Tic Tac Toe Player is a Python-based implementation of the classic Tic Tac Toe game. It features a robust computer AI that uses the minimax algorithm to provide challenging gameplay.
