@@ -3,7 +3,8 @@ const siteMetadata = {
   title: 'Sarthak Kapila',
   author: 'Sarthak Kapila',
   headerTitle: 'Sarthak Kapila',
-  description: "Hey, I'm Sarthak Kapila, passionate developer from India.",
+  description:
+    "Hey, I'm Sarthak Kapila, passionate developer interested in Full Stack development and AI-ML",
   language: 'en-us',
   theme: 'light', // system, dark or light
   siteUrl: 'https://sarthakkapila.com',

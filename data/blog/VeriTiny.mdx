@@ -1,0 +1,54 @@
+---
+title: 'Implementing a CPU in systemverilog'
+date: '29-05-2024'
+draft: false
+summary: 'How to become one and meet other cracked engineers!'
+images: ['/static/images/cpu.png']
+---
+
+# Implementing a CPU in verilog!
+
+Spent about 1 week building a CPU from scratch with no prior experience and it was way harder than I expected!
+Hey there, fellow cracked engineers! Today, I'm going to share a fun little project I've been working on: creating a minimal 32-bit ARM CPU implementation in Verilog.
+Let's call it the VeriTiny CPU ;)
+
+## Motivation
+
+Now, you might be wondering, "Why on earth would you want to reinvent the wheel and create a CPU from scratch?"
+My motivation for working on this project was udnerstanding the inner workings how CPU work and its architecture!
+And not just learning but appreciating the intricate inner workings of these marvels of engineering that power our modern world.
+
+The VeriTiny CPU is designed to be a softcore ARM CPU, which means it's implemented entirely in Verilog HDL (Hardware Description Language).
+
+## Architecture
+
+The idea is to break down the CPU's operations into stages or pipelines, allowing multiple instructions to be processed simultaneously, thus improving performance.
+
+### IFU
+
+At the heart of this project lies the Instruction Fetch Unit (IFU), which fetches instructions from memory based on the program counter (PC) and feeds them into the Instruction Decoder.
+
+### Decoder
+
+The Decoder, as the name suggests, decodes these instructions and generates control signals to coordinate the operation of other units, such as the Register File, Arithmetic Logic Unit (ALU), and Data Memory Interface.
+
+### Register
+
+The Register File is like the CPU's personal diary, storing all the juicy data and temporary results.
+
+### ALU
+
+The ALU, on the other hand, is the muscle of the operation, performing arithmetic and logical operations on data from the Register File.
+
+But how do we ensure smooth communication between all these components? Enter the Control Logic, the traffic cop of our CPU world. It coordinates the flow of data and control signals, making sure everyone plays nice and follows the rules.
+
+### Pipelines
+
+To keep things organized, we've divided the CPU's operations into five pipeline stages: Fetch (IF), Decode (ID), Execute (EX), Memory (MEM), and Write Back (WB). Each stage is implemented as a separate module with its own set of pipeline registers, holding intermediate values and enabling data transfer between stages.
+Of course, no system is perfect, and data hazards can occur when instructions depend on results from previous instructions that haven't been fully processed yet.
+
+### Conclusion
+
+Building this VeriTiny CPU has been an incredible learning experience, diving deep into the intricacies of CPU architecture, pipelining techniques, and Verilog HDL.
+
+Happy coding, my fellow cracked engineers :)

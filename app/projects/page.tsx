@@ -1,7 +1,8 @@
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
-
+import SocialIcon from '@/components/social-icons'
+import siteMetadata from '@/data/siteMetadata'
 export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default function Projects() {
@@ -12,7 +13,11 @@ export default function Projects() {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Projects
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">Hello</p>
+          <p className="flex justify-self-start text-lg leading-7 text-gray-500 dark:text-gray-400 ">
+            {' '}
+            Some of my projects you can find more @{' '}
+            <SocialIcon kind="github" href={siteMetadata.github} size={6} />
+          </p>
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
