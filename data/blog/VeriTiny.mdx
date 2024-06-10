@@ -1,6 +1,6 @@
 ---
 title: 'Implementing a CPU in systemverilog'
-date: '29-05-2024'
+date: '2024-06-11'
 tags: []
 draft: false
 summary: 'How to become one and meet other cracked engineers!'
@@ -9,15 +9,11 @@ images: ['/static/images/cpu.png']
 
 # Implementing a CPU in verilog!
 
-Spent about 1 week building a CPU from scratch with no prior experience and it was way harder than I expected!
-Hey there, fellow cracked engineers! Today, I'm going to share a fun little project I've been working on: creating a minimal 32-bit ARM CPU implementation in Verilog.
-Let's call it the VeriTiny CPU ;)
+Creating a CPU from scratch might seem like a daunting task, especially with no prior experience in hardware design. However, it's a fascinating challenge that offers deep insights into the inner workings of computer architecture. Over the past week, I've been working on a project to build a minimal 32-bit ARM CPU using Verilog HDL (Hardware Description Language). I call it the VeriTiny CPU.
 
 ## Motivation
 
-Now, you might be wondering, "Why on earth would you want to reinvent the wheel and create a CPU from scratch?"
-My motivation for working on this project was udnerstanding the inner workings how CPU work and its architecture!
-And not just learning but appreciating the intricate inner workings of these marvels of engineering that power our modern world.
+You might ask, "Why create a CPU from scratch?" My goal was to gain a thorough understanding of how CPUs operate and appreciate the complexity and elegance of these crucial components that power modern computing devices. This project was not just about learning but also about experiencing the intricacies of CPU design firsthand.
 
 The VeriTiny CPU is designed to be a softcore ARM CPU, which means it's implemented entirely in Verilog HDL (Hardware Description Language).
 
@@ -45,11 +41,11 @@ But how do we ensure smooth communication between all these components? Enter th
 
 ### Pipelines
 
-To keep things organized, we've divided the CPU's operations into five pipeline stages: Fetch (IF), Decode (ID), Execute (EX), Memory (MEM), and Write Back (WB). Each stage is implemented as a separate module with its own set of pipeline registers, holding intermediate values and enabling data transfer between stages.
+To keep things organized, I've divided the CPU's operations into five pipeline stages: Fetch (IF), Decode (ID), Execute (EX), Memory (MEM), and Write Back (WB). Each stage is implemented as a separate module with its own set of pipeline registers, holding intermediate values and enabling data transfer between stages.
 Of course, no system is perfect, and data hazards can occur when instructions depend on results from previous instructions that haven't been fully processed yet.
 
 ### Conclusion
 
-Building this VeriTiny CPU has been an incredible learning experience, diving deep into the intricacies of CPU architecture, pipelining techniques, and Verilog HDL.
+Building the VeriTiny CPU has been an incredible learning experience. It provided a deep dive into CPU architecture, pipelining techniques, and Verilog HDL. This project has not only enhanced my technical skills but also deepened my appreciation for the complex engineering behind modern CPUs.
 
 Happy coding, my fellow cracked engineers :)
