@@ -1,0 +1,134 @@
+---
+title: 'NetflixOps: Building a Robust CI/CD Pipeline for Netflix Clone'
+date: '2024-07-5'
+tags: []
+draft: false
+summary: ''
+images: ['/static/images/netflixops.jpg']
+---
+
+# 🚀 NetflixOps: Building a Robust CI/CD Pipeline for Netflix Clone
+
+## 📌 Overview
+
+In this blog post, we'll dive deep into creating a comprehensive CI/CD pipeline for a Netflix clone application. We'll explore how to set up a robust development environment using various DevOps tools and best practices. Let's get started! 🏁
+
+## 🛠️ Tools & Plugins Used
+
+- Jenkins 🏗️
+- Prometheus 📊
+- Grafana 📈
+- Docker 🐳
+- SonarQube 🔍
+- OWASP 🛡️
+- Trivy Scan 🔒
+
+## 🔧 Detailed Steps
+
+### 1. Infrastructure Setup 🖥️
+
+To begin, we'll need to set up our infrastructure:
+
+- Create 3 EC2 instances:
+  1. Application server (t2.large)
+  2. Monitoring server (t2.micro)
+  3. Pipeline server (t2.large)
+
+> 💡 Tip: Using separate servers for different purposes helps with resource management and scalability.
+
+### 2. Application Overview 🎬
+
+We'll be using a Netflix clone built with React and TypeScript. You can find the repository here: [Netflix Clone](https://github.com/gsbarure/netflix-clone-react-typescript)
+
+> ⚠️ Important: Make sure to use a VPN while using the API or the app, as TMDB might not work in certain regions like India.
+
+### 3. Docker Compose Setup 🐳
+
+Run the following command to start our Docker containers:
+
+```sh
+docker-compose up
+```
+
+This will spin up 5 containers:
+
+- Node Exporter
+- LocalStack
+- Grafana
+- Jenkins
+- Trivy
+
+> 📚 Learn more about docker-compose [here](https://docs.docker.com/compose/).
+
+### 4. Prometheus Configuration 📊
+
+Configure the `prometheus.yml` file to set up monitoring for all our services and dependencies.
+
+### 5. Jenkins Configuration ⚙️
+
+1. Access Jenkins at `https://localhost:8080/`
+2. Retrieve the initial admin password:
+   ```sh
+   sudo docker exec ${CONTAINER_ID or CONTAINER_NAME} cat /var/jenkins_home/secrets/initialAdminPassword
+   ```
+3. Install the Email Extension plugin
+
+### 6. Essential Jenkins Plugins 🔌
+
+Install the following plugins:
+
+- Eclipse Temurin Installer
+- SonarQube Scanner
+- NodeJS Plugin
+- Docker-related plugins (Docker, Docker API, Docker Commons, Docker Pipelines, docker-build-step)
+- OWASP Dependency Check Plugin
+
+### 7. Tool Configuration 🔧
+
+Configure the following tools in Jenkins:
+
+- Java
+- NodeJS
+- OWASP
+- Email
+- SonarQube
+
+### 8. Global Credentials 🔑
+
+Add global credentials for:
+
+- Docker Hub
+- Email service
+
+### 9. Jenkins Job Creation 📝
+
+1. Create a new pipeline job named "Netflix"
+2. Add the Jenkins pipeline script from `Jenkins/jenkinsfile`
+3. Review and modify the script as needed
+
+### 10. Pipeline Execution 🏃‍♂️
+
+Run the pipeline and watch as it:
+
+- Checks out the code
+- Builds the application
+- Runs tests
+- Performs security scans
+- Creates a Docker image
+- Pushes the image to Docker Hub
+
+### 11. Verification 🔍
+
+Once the pipeline completes successfully, pull and run the Docker image to verify the application.
+
+## 📊 Monitoring Dashboard
+
+## 🎉 Conclusion
+
+Congratulations! You've successfully set up a comprehensive CI/CD pipeline for a Netflix clone application. This setup incorporates best practices in continuous integration, security scanning, and monitoring, ensuring a robust and reliable deployment process.
+
+By leveraging tools like Jenkins, Docker, SonarQube, and Prometheus, you've created a scalable and maintainable DevOps workflow that can be adapted for various applications.
+
+Remember to regularly update your tools and security scans to keep your pipeline in top shape. Happy coding! 🚀👨‍💻👩‍💻
+
+## Checkout [NetflixOps Repo](https://github.com/sarthakkapila/NetflixOps) for the code!
